@@ -1,0 +1,4 @@
+2021-12-08 12:53:40,175 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-08 12:53:45,258 INFO src Thread-1 : Info level log
+2021-12-08 12:53:45,258 WARNING src Thread-1 : Warning level log
+2021-12-08 12:53:45,259 INFO werkzeug Thread-1 : 127.0.0.1 - - [08/Dec/2021 12:53:45] "GET / HTTP/1.1" 200 -

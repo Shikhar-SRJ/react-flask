@@ -7,11 +7,15 @@ from src.models import User, Courses
 
 @app.route('/')
 def index():  # put application's code here
+    app.logger.info('Info level log')
+    app.logger.warning('Warning level log')
     return jsonify({"message": "welcome"})
 
 
 @app.route('/register', methods=['POST'])
 def register():
+    app.logger.info('Info level log')
+    app.logger.warning('Warning level log')
     data = request.get_json()
     if request.method == 'POST':
         password_hash = generate_password_hash(data["password"])
